@@ -34,7 +34,6 @@ class _DicePageState extends State<DicePage> {
               onPressed: () {
                 setState(() {
                   lDiceNumber = Random().nextInt(6) + 1;
-                  rDiceNumber = Random().nextInt(6) + 1;
                 });
               },
               child: Image.asset('images/dice$lDiceNumber.png'),
@@ -42,9 +41,7 @@ class _DicePageState extends State<DicePage> {
           ),
           Expanded(
             child: FlatButton(
-              onPressed: () {
-
-              },
+              onPressed: () {},
               child: Image.asset('images/dice$rDiceNumber.png'),
             ),
           ),
